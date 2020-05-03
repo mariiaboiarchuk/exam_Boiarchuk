@@ -41,6 +41,20 @@ int main()
 	cout << "Option = " << option << endl;
 	cout << "Your pyramid\n";
 
+	if (option == 1)
+	{
+		for (int i = 0; i < height; i++)
+		{
+			for (int j = 0; j < height; j++)
+			{
+				if (i + j >= height - 1)
+					cout << "#";
+				else
+					cout << " ";
+			}
+			cout << endl;
+		}
+	}
 	system("pause");
 	return 0;
 }
