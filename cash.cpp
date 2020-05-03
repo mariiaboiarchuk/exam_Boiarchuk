@@ -22,3 +22,9 @@ int Count10(int& money) {
 	money = money % 10;
 	return counter;
 }
+
+int Count5(int& money) {
+	int counter = money / 5;
+	money = money % 5;
+	return counter;
+}
