@@ -6,3 +6,7 @@ bool CheckMoney(int money) {
 		return false;
 	return true;
 }
+
+int ConvertMoney(float money) {
+	return money *= 100;
+}
