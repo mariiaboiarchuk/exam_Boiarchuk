@@ -10,3 +10,9 @@ bool CheckMoney(int money) {
 int ConvertMoney(float money) {
 	return money *= 100;
 }
+
+int Count25(int& money) {
+	int counter = money / 25;
+	money = money % 25;
+	return counter;
+}
