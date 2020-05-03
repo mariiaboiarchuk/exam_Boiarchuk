@@ -49,3 +49,13 @@ void ShowCoins(float money) {
 		cout << "1: " << Count1(coins) << endl;
 	}
 }
+int main() {
+	float money;
+
+	do {
+		cout << "Enter money: ";
+		cin >> money;
+	} while (!CheckMoney(money));
+	ShowCoins(money);
+	return 0;
+}
